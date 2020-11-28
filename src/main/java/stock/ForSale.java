@@ -10,4 +10,16 @@ public abstract class ForSale implements ISell {
         this.buyingPrice = buyingPrice;
         this.retailPrice = retailPrice;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public double getBuyingPrice() {
+        return buyingPrice;
+    }
+
+    public double getRetailPrice() {
+        return retailPrice;
+    }
 }
