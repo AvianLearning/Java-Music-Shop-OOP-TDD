@@ -1,13 +1,16 @@
 package instruments;
 
-public abstract class Instrument implements IPlay {
+import stock.ForSale;
+
+public abstract class Instrument extends ForSale implements IPlay {
     private String type;
     private String colour;
     private String material;
     private String make;
     private String model;
 
-    public Instrument(String type, String colour, String material, String make, String model) {
+    public Instrument(String description, double buyingPrice, double retailPrice, String type, String colour, String material, String make, String model) {
+        super(description, buyingPrice, retailPrice);
         this.type = type;
         this.colour = colour;
         this.material = material;

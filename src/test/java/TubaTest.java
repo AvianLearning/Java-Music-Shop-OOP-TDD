@@ -10,7 +10,7 @@ public class TubaTest {
 
     @Before
     public void setUp() {
-        tuba = new Tuba("brass", "Golden", "brass", "Yamaha", "YBB- 641", 4);
+        tuba = new Tuba("Tuba", 6000.00, 7699.00,"brass", "Golden", "brass", "Yamaha", "YBB- 641", 4);
     }
 
     @Test

@@ -3,10 +3,11 @@ package instruments;
 public class Guitar extends Instrument {
     private int numberOfStrings;
 
-    public Guitar(String type, String colour, String material, String make, String model, int numberOfStrings) {
-        super(type, colour, material, make, model);
+    public Guitar(String description, double buyingPrice, double retailPrice, String type, String colour, String material, String make, String model, int numberOfStrings) {
+        super(description, buyingPrice, retailPrice, type, colour, material, make, model);
         this.numberOfStrings = numberOfStrings;
     }
+
 
     public int getNumberOfStrings() {
         return numberOfStrings;
@@ -14,5 +15,9 @@ public class Guitar extends Instrument {
 
     public String play() {
         return "Kerrrraaang!";
+    }
+
+    public double calculateMarkup(double buyingPrice, double sellingPrice) {
+        return 0;
     }
 }

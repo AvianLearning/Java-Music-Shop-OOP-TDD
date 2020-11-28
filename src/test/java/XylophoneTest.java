@@ -3,7 +3,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 
 public class XylophoneTest {
 
@@ -11,7 +10,7 @@ public class XylophoneTest {
 
     @Before
     public void setUp() {
-        xylophone = new Xylophone("percussion", "Brown", "African Padauk wood", "WHD", "Orchestral", 37);
+        xylophone = new Xylophone("Xylophone", 220.00, 299.99, "percussion", "Brown", "African Padauk wood", "WHD", "Orchestral", 37);
     }
 
     @Test
