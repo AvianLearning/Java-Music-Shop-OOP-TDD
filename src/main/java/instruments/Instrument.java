@@ -1,6 +1,6 @@
 package instruments;
 
-public abstract class Instrument {
+public abstract class Instrument implements IPlay {
     private String type;
     private String colour;
     private String material;
@@ -9,5 +9,17 @@ public abstract class Instrument {
         this.type = type;
         this.colour = colour;
         this.material = material;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public String getMaterial() {
+        return material;
     }
 }
