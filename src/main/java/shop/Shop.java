@@ -1,0 +1,18 @@
+package shop;
+
+import stock.ISell;
+
+import java.util.ArrayList;
+
+public class Shop {
+    private String name;
+    private ArrayList<ISell> stock;
+
+    public Shop(String name) {
+        this.stock = new ArrayList<ISell>();
+    }
+
+    public ArrayList<ISell> getStock() {
+        return stock;
+    }
+}
