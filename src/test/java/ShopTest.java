@@ -45,4 +45,12 @@ public class ShopTest {
         shop.addItemToStock(synthesizer);
         assertEquals(2, shop.getNumberOfItemsInStock());
     }
+
+    @Test
+    public void canRemoveItemFromStock() {
+        shop.addItemToStock(guitar);
+        shop.addItemToStock(synthesizer);
+        shop.removeItemFromStock(guitar);
+        assertEquals(1, shop.getNumberOfItemsInStock());
+    }
 }

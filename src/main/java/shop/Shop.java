@@ -20,6 +20,10 @@ public class Shop {
         stock.add(item);
     }
 
+    public void removeItemFromStock(ISell item) {
+        stock.remove(item);
+    }
+
     public int getNumberOfItemsInStock() {
         return this.stock.size();
     }
