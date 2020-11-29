@@ -49,8 +49,21 @@ public class ShopTest {
     @Test
     public void canRemoveItemFromStock() {
         shop.addItemToStock(guitar);
-        shop.addItemToStock(synthesizer);
+        shop.addItemToStock(sheetMusic);
         shop.removeItemFromStock(guitar);
         assertEquals(1, shop.getNumberOfItemsInStock());
+    }
+
+    @Test
+    public void canCalculateTotalProfit() {
+        shop.addItemToStock(guitar);
+        shop.addItemToStock(synthesizer);
+        shop.addItemToStock(xylophone);
+        shop.addItemToStock(tuba);
+        shop.addItemToStock(sheetMusic);
+        shop.addItemToStock(packetOfGuitarStrings);
+        shop.addItemToStock(guitarPedal);
+        assertEquals(2408.93, shop.calculateTotalProfit(), 0.01);
+
     }
 }
