@@ -17,7 +17,7 @@ public class Xylophone extends Instrument {
         return "Plinkety plinkety plonk plonk";
     }
 
-    public double calculateMarkup(double buyingPrice, double sellingPrice) {
-        return 0;
+    public double calculateMarkup() {
+        return super.getRetailPrice() - super.getBuyingPrice();
     }
 }

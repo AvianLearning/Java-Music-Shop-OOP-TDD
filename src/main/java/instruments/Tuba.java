@@ -17,7 +17,7 @@ public class Tuba extends Instrument {
         return "Pum pum pum pumpedy rum pum pum";
     }
 
-    public double calculateMarkup(double buyingPrice, double sellingPrice) {
-        return 0;
+    public double calculateMarkup() {
+        return super.getRetailPrice() - super.getBuyingPrice();
     }
 }

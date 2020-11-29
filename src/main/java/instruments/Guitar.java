@@ -8,7 +8,6 @@ public class Guitar extends Instrument {
         this.numberOfStrings = numberOfStrings;
     }
 
-
     public int getNumberOfStrings() {
         return numberOfStrings;
     }
@@ -17,7 +16,7 @@ public class Guitar extends Instrument {
         return "Kerrrraaang!";
     }
 
-    public double calculateMarkup(double buyingPrice, double sellingPrice) {
-        return 0;
+    public double calculateMarkup() {
+        return super.getRetailPrice() - super.getBuyingPrice();
     }
 }

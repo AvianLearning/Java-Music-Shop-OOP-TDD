@@ -17,7 +17,7 @@ public class Synthesizer extends Instrument {
         return "Squelch, whirrr, beep beep whooshhhhh";
     }
 
-    public double calculateMarkup(double buyingPrice, double sellingPrice) {
-        return 0;
+    public double calculateMarkup() {
+        return super.getRetailPrice() - super.getBuyingPrice();
     }
 }
