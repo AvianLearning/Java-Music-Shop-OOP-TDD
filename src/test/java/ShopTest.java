@@ -36,6 +36,13 @@ public class ShopTest {
 
     @Test
     public void checkStockStartsEmpty() {
-        assertEquals(0, shop.getStock().size());
+        assertEquals(0, shop.getNumberOfItemsInStock());
+    }
+
+    @Test
+    public void checkCanAddItemsToStock() {
+        shop.addItemToStock(guitar);
+        shop.addItemToStock(synthesizer);
+        assertEquals(2, shop.getNumberOfItemsInStock());
     }
 }

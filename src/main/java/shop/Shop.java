@@ -15,4 +15,12 @@ public class Shop {
     public ArrayList<ISell> getStock() {
         return stock;
     }
+
+    public void addItemToStock(ISell item) {
+        stock.add(item);
+    }
+
+    public int getNumberOfItemsInStock() {
+        return this.stock.size();
+    }
 }
